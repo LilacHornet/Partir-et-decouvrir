@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>À propos</title>
     <link rel="stylesheet" href="Style/apropos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="merriweather-regular" id="nav">
+            <div class="burger" id="burger"></div>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="destinations.html">Nos destinations</a></li>
             <li><a href="àpropos.html">Nous connaitre</a></li>
@@ -18,9 +25,9 @@
         </nav>
     </header>
     <main>
-        <h1>Partir et découvrir</h1>
-        <h2>Notre histoire</h2>
-        <p>Partir et Découvrir est une entreprise de voyage fondée par Patrick Daikuvir, passionné par le monde et
+        <h1 class="merriweather-black">Partir et découvrir</h1>
+        <h2 class="merriweather-bold">Notre histoire</h2>
+        <p class="merriweather-regular">Partir et Découvrir est une entreprise de voyage fondée par Patrick Daikuvir, passionné par le monde et
             la découverte de nouvelles cultures. Son objectif était de rendre le voyage accessible à tous, en proposant
             des séjours uniques, personnalisés et hors des sentiers battus. Grâce à son expertise et à sa vision
             innovante, l’entreprise a rapidement gagné en popularité.
@@ -34,20 +41,20 @@
         <div class="photos">
             <figure>
                 <img src="Images/locaux.jpg" alt="">
-                <figcaption>Nos locaux</figcaption>
+                <figcaption class="merriweather-light-italic">Nos locaux</figcaption>
             </figure>
             <figure>
                 <img src="Images/employes.jpg" alt="">
-                <figcaption>Nos employés</figcaption>
+                <figcaption class="merriweather-light-italic">Nos employés</figcaption>
             </figure>
         </div>
     </main>
     <footer>
-        <p>Partir et Découvrir est une marque déposée du groupe Neslté, le leader mondial de la vente d'eau et d'autres
-            produits associés. <br>
+        <p class="merriweather-light-italic">Partir et Découvrir est une marque déposée du groupe Neslté. <br>
             Copyright © 1996–2025 Partir et découvrir™. Tous droits réservés.</p>
 
     </footer>
+    <script src="Script/burger.js"></script>
 </body>
 
 </html>

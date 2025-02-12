@@ -54,6 +54,7 @@ body {
   background-color: white;
   margin: 0;
 
+
 }
 
 footer {
@@ -70,7 +71,7 @@ header {
   top: 0vh;
   margin-top: 5vh;
   padding: 20px;
-  background-color: #7F77BB;
+  background-color: #7a6ddd;
   z-index: 10;
 }
 
@@ -111,13 +112,13 @@ nav li a {
 
 
 .formulaire {
-  background-color: #5E54AB;
+  background-color: #7a6ddd;
   margin: auto;
-  width: 50vw;
+  width: 30vw;
   text-align: center;
   padding-top: 2vh;
   padding-bottom: 8vh;
-  border-radius: 50%;
+  border-radius: 5%;
 }
 
 .formulaire button {
@@ -126,6 +127,9 @@ nav li a {
 
 .inputnumber {
   width: 3vw;
+}
+.formulaire *{
+  max-width: 100%;
 }
 
 
