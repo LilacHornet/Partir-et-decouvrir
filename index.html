@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Partir et découvrir</title>
     <link rel="stylesheet" href="Style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="merriweather-regular" id="nav">
+            <div class="burger" id="burger"></div>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="destinations.html">Nos destinations</a></li>
             <li><a href="àpropos.html">Nous connaitre</a></li>
@@ -20,51 +27,77 @@
     </header>
 
     <main>
-        <h1>Partir et découvrir</h1>
-        <div>
-            <h2>Vous savez ce que vous voulez ?</h2>
+        <h1 class="merriweather-black">Partir et découvrir</h1>
+        <section class="formulaire">
+            <h2 class="merriweather-bold">Vous savez ce que vous voulez ?</h2>
             <form action="">
-                <label for="">Où ?</label>
-                <input type="text" placeholder="Paris, Barcelone, ...">
-                <label for="">Quand ?</label>
-                <input type="date">
-                <label for="">Combien d'enfants</label>
-                <input type="number">
-                <label for="">Combien d'adultes</label>
-                <input type="number">
+                <label for="lieu" class="merriweather-regular">Lieu</label>
+                <input type="text" id="lieu" placeholder="Paris, Barcelone, ...">
+                <label for="depart" class="merriweather-regular">Départ</label>
+                <input type="date" id="depart">
+                <label for="retour" class="merriweather-regular">Retour</label>
+                <input type="date" id="retour">
+                <label for="enfants" class="merriweather-regular">Combien d'enfants</label>
+                <input type="number" id="enfants" class="inputnumber">
+                <label for="adultes" class="merriweather-regular">Combien d'adultes</label>
+                <input type="number" id="adultes" class="inputnumber">
+                <br>
+                <button class="merriweather-light">Valider</button>
             </form>
-        </div>
-        <div>
-            <h2>Nos destinations les plus populaires</h2>
-            <div>
-                <h4>Nom desti</h4>
-                <img src="Images/placeholder.png" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sem ac est convallis mattis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut vestibulum erat eu nisi ornare, a mollis eros condimentum. Duis quis scelerisque mauris. Aliquam sed luctus justo, quis porttitor ex. Nullam interdum vel leo non sodales. Phasellus condimentum non nulla sit amet aliquam. Aliquam varius ipsum ut viverra dictum. Vivamus aliquet lectus metus, quis lobortis diam scelerisque efficitur.</p>
+            <p id="reponse"></p>
+        </section>
+
+        <section class="Images">
+            <h2 class="merriweather-bold">Nos destinations les plus populaires</h2>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+
+                    <img src="../Partir et découvrir/Images/paris.jpg" style="width:100%">
+                    <div class="text merriweather-light-italic">Paris, Le Louvre</div>
+                </div>
+
+                <div class="mySlides fade">
+
+                    <img src="../Partir et découvrir/Images/cuzco.jpg" style="width:100%">
+                    <div class="text merriweather-light-italic">Cuzco, Machu Picchu</div>
+                </div>
+
+                <div class="mySlides fade">
+
+                    <img src="../Partir et découvrir/Images/singapour.jpg" style="width:100%">
+                    <div class="text merriweather-light-italic">Singapour, Marina bay</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-            <div>
-                <h4>Nom desti</h4>
-                <img src="Images/placeholder.png" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sem ac est convallis mattis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut vestibulum erat eu nisi ornare, a mollis eros condimentum. Duis quis scelerisque mauris. Aliquam sed luctus justo, quis porttitor ex. Nullam interdum vel leo non sodales. Phasellus condimentum non nulla sit amet aliquam. Aliquam varius ipsum ut viverra dictum. Vivamus aliquet lectus metus, quis lobortis diam scelerisque efficitur.</p>
-            </div>
-            <div>
-                <h4>Nom desti</h4>
-                <img src="Images/placeholder.png" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sem ac est convallis mattis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut vestibulum erat eu nisi ornare, a mollis eros condimentum. Duis quis scelerisque mauris. Aliquam sed luctus justo, quis porttitor ex. Nullam interdum vel leo non sodales. Phasellus condimentum non nulla sit amet aliquam. Aliquam varius ipsum ut viverra dictum. Vivamus aliquet lectus metus, quis lobortis diam scelerisque efficitur.</p>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
             <a href="destinations.html">Voir toutes nos destinations</a>
-        </div>
-        <div>
-            <H3>Offres</H3>
-        </div>
+        </section>
+
+        <section class="offre">
+            <H3>OFFRE EXCEPTIONEL</H3>
+            <p>Vous pouvez obtenir une incroyable réduction de 75% sur tous les voyages à Jouy-en-Josas</p>
+            <img src="Images/Jouy-en-Josas.jpg" alt="">
+        </section>
 
     </main>
 
     <footer>
-        <p>Booking.com fait partie de Booking Holdings Inc., le leader mondial des voyages en ligne et services associés.
-            Copyright © 1996–2025 Booking.com™. Tous droits réservés.</p>
+        <p>Partir et Découvrir est une marque déposée du groupe Neslé©, le leader mondial de la vente d'eau et d'autres
+            produits associés. <br>
+            Copyright © 1996–2025 Partir et découvrir™. Tous droits réservés.</p>
 
     </footer>
-    <script src="Script/script.js"></script>
+    <script src="Script/script_carrousel.js"></script>
+    <script src="Script/script_burger.js"></script>
 </body>
 
 </html>

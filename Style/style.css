@@ -1,3 +1,264 @@
-img{
-    max-width: 20vw;
+.merriweather-light {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.merriweather-regular {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.merriweather-bold {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.merriweather-black {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.merriweather-light-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.merriweather-regular-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.merriweather-bold-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.merriweather-black-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+html {
+  cursor: url('../Images/plane.png'), auto;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+
+}
+
+
+h1 {
+
+  text-align: center;
+}
+
+header {
+  position: sticky;
+  top: 0vh;
+  margin-top: 5vh;
+  padding: 20px;
+  background-color: #7F77BB;
+  z-index: 10;
+}
+
+.offre{
+  border: red;
+  border-style: dashed;
+  
+  text-align: center;
+  margin-top: 10vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+.offre img{
+  margin: auto;
+  max-width: 50vw;
+   max-height: 40vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+nav li {
+  list-style-type: none
+}
+
+nav li a {
+  text-decoration: none;
+  background-color: white;
+  border: black;
+  border-style: solid;
+  padding: 1vh;
+  color: black;
+}
+
+
+.formulaire {
+  background-color: #5E54AB;
+  margin: auto;
+  width: 75vw;
+  text-align: center;
+  padding-top: 2vh;
+  padding-bottom: 8vh;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  border-radius: 50%;
+}
+
+.formulaire button {
+  margin-top: 1vh;
+}
+
+.inputnumber {
+  width: 3vw;
+}
+
+.Images {
+  background-color: #7a6ddd;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.Images a {
+  text-decoration: none;
+  color: white;
+}
+
+* {
+  box-sizing: border-box
+}
+
+label {
+  cursor: url('../Images/plane.png'), auto;
+}
+
+.slideshow-container {
+  max-width: 75vh;
+  position: relative;
+  margin: auto;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+div.burger {
+  width: 50px;
+  height: 50px;
+  background-image: url("../Images/open.png");
+  background-size: cover;
+  display: none;
+}
+
+div.open {
+  background-image: url("../Images/close.png");
+}
+
+@media screen and (max-width: 560px) {
+
+  div.burger {
+    display: block;
+  }
+
+  nav li {
+    display: none;
+    padding-top: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav.nav-open li {
+    display: block;
+  }
 }
