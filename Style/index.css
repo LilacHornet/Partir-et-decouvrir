@@ -53,8 +53,6 @@ html {
 body {
   background-color: white;
   margin: 0;
-
-
 }
 
 footer {
@@ -78,7 +76,6 @@ header {
 .offre {
   border: red;
   border-style: dashed;
-
   text-align: center;
   margin-top: 10vh;
   margin-left: 10vw;
@@ -94,7 +91,6 @@ header {
 nav {
   display: flex;
   justify-content: space-around;
-
 }
 
 nav li {
@@ -128,11 +124,10 @@ nav li a {
 .inputnumber {
   width: 3vw;
 }
-.formulaire *{
+
+.formulaire * {
   max-width: 100%;
 }
-
-
 
 .Images {
   background-color: #7a6ddd;
