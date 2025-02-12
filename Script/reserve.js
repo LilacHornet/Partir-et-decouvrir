@@ -8,5 +8,6 @@ btn.addEventListener('click', () => {
     const adultes = document.getElementById('adultes').value
     const reponse = document.getElementById('reponse')
 
-    reponse.textContent = `Nous sommes désolés, nous n'avons pas de voyage disponible du ${depart} au ${retour} à ${lieu} pour ${enfants} enfants et ${adultes} adultes.`
+    reponse.textContent = `Nous sommes désolés, nous n'avons pas de voyage disponible du ${depart} 
+    au ${retour} à ${lieu} pour ${enfants} enfants et ${adultes} adultes.`
 })
