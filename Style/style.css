@@ -234,13 +234,13 @@ label {
 div.burger {
   width: 50px;
   height: 50px;
-  background-image: url("../Images/open.png");
+  background-image: url("../Images/close.png");
   background-size: cover;
   display: none;
 }
 
 div.open {
-  background-image: url("../Images/close.png");
+  background-image: url("../Images/open.png");
 }
 
 @media screen and (max-width: 560px) {
