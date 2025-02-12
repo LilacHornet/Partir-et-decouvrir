@@ -158,3 +158,25 @@ figcaption {
     font: italic smaller sans-serif;
     text-align: center;
 }
+
+button{
+    width: 10vw;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+form * {
+    margin: 10px;
+}
+form input{
+    width: 50vw;
+}
+form textarea{
+    width: 75vw;
+}
