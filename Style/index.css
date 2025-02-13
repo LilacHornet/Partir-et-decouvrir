@@ -53,6 +53,8 @@ html {
 body {
   background-color: white;
   margin: 0;
+  background-image: url("../Images/background.jpg");
+  background-size: cover;
 }
 
 footer {
@@ -69,7 +71,7 @@ header {
   top: 0vh;
   margin-top: 5vh;
   padding: 20px;
-  background-color: #7a6ddd;
+  background-color: #383BAD;
   z-index: 10;
 }
 
@@ -108,7 +110,7 @@ nav li a {
 
 
 .formulaire {
-  background-color: #7a6ddd;
+  background-color: #5190C7;
   margin: auto;
   width: 30vw;
   text-align: center;
@@ -130,7 +132,7 @@ nav li a {
 }
 
 .Images {
-  background-color: #7a6ddd;
+  background-color: #5190C7;
   margin-left: 10vw;
   margin-right: 10vw;
 }
