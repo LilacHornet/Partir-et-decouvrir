@@ -130,3 +130,12 @@ div {
 img {
   max-width: 30vw;
 }
+
+p{
+  text-align: justify;
+}
+
+section{
+  border-style: solid;
+  border-color: black;
+}
